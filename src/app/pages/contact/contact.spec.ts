@@ -1,21 +1,14 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Contact } from './contact';
+import { Component } from '@angular/core';
 
-describe('Contact', () => {
-  let component: Contact;
-  let fixture: ComponentFixture<Contact>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Contact],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(Contact);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+@Component({
+  selector: 'app-contact',
+  imports: [],
+  templateUrl: './contact.html',
+  styleUrl: './contact.scss',
+})
+export class Contact {
+  onSubmit(event: Event) {
+    event.preventDefault();
+    alert('Votre message a bien été envoyé !');
+  }
+}
