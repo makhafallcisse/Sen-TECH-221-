@@ -2,18 +2,13 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm",
-    "analytics": "5358bf80-d430-48d4-87e1-76853a329628"
+    "packageManager": "npm"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "SenTECH221": {
+    "sen-tech-app": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -23,7 +18,6 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
@@ -32,15 +26,7 @@
             ],
             "styles": [
               "src/styles.scss"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "security": {
-              "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -70,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "SenTECH221:build:production"
+              "buildTarget": "sen-tech-app:build:production"
             },
             "development": {
-              "buildTarget": "SenTECH221:build:development"
+              "buildTarget": "sen-tech-app:build:development"
             }
           },
           "defaultConfiguration": "development"
