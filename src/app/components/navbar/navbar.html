@@ -1,1 +1,10 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a routerLink="/">Sen TECH<br>221</a>
+    </div>
+    <ul class="navbar-liens">
+        <li ><a routerLink="/" routerLinkActive="actif" [routerLinkActiveOptions]="{exact: true}">Accueill</a></li>
+        <li><a routerLink="/a-propos" routerLinkActive="actif">A propos</a></li>
+        <li><a routerLink="/contact" routerLinkActive="actif">Contact</a></li>
+    </ul>
+</nav>
