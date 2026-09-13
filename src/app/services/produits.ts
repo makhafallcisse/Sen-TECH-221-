@@ -124,8 +124,8 @@ export class ProduitsService {
     categorie: 'Console de jeux',
     prix: 400000,
     image: '/image/produits/play 5 slim.jfif',
-    descriptionCourte: 'Design premium, écran bord à bord.',
-    description: 'Le XPS 13 est réputé pour son design haut de gamme et son écran quasiment sans bordures. Excellent choix pour un usage professionnel élégant.',
+    descriptionCourte: 'Console de salon trés prémium',
+    description: 'La PS 5 Slim est une console trés performante avec son processseur  AMD Ryzen Zen 2, sa carte graphige  AMD Radeon RDNA 2 et son trockage SSD de 1To ',
     enStock: false
   },
   {
@@ -135,8 +135,8 @@ export class ProduitsService {
     categorie: 'Console de jeux',
     prix: 625000,
     image: '/image/produits/play 5 pro.jfif',
-    descriptionCourte: 'Design premium, écran bord à bord.',
-    description: 'Le XPS 13 est réputé pour son design haut de gamme et son écran quasiment sans bordures. Excellent choix pour un usage professionnel élégant.',
+    descriptionCourte: 'Console de salon trés prémium avec de hautes pérformances.',
+    description: " La PS % PRO est équipée d'un processeur AMD Ryzen Zen 2 à 8 cœurs, d'une partie graphique AMD RDNA améliorée de 16,7 TFLOPS et d'un espace de stockage SSD de 2 To",
     enStock: false
   },
 
@@ -147,17 +147,17 @@ export class ProduitsService {
     categorie: 'Console de jeux',
     prix: 330000,
     image: '/image/produits/xbox series s.jfif',
-    descriptionCourte: 'Design premium, écran bord à bord.',
-    description: 'Le XPS 13 est réputé pour son design haut de gamme et son écran quasiment sans bordures. Excellent choix pour un usage professionnel élégant.',
+    descriptionCourte: 'Console de salon compacte ',
+    description: 'la XBOX Series S est équipé du AMD Zen 2 cadencé à 3,6 GHz ,de le carte graphiphe AMD Radeon RDNA 2 et de 512 Go de stockage SSD .',
     enStock: false
   },
 ];
 
-  getProduits(): Produit[] {
+getProduits(): Produit[] {
     return this.produits;
-  }
+}
 
-  getProduitById(id: number): Produit | undefined {
-    return this.produits.find(produit => produit.id === id);
-  }
+getProduitById(id: number): Produit | undefined {
+  return this.produits.find(produit => produit.id === id);
+ }
 }
