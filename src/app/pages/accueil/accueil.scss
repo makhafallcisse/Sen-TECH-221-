@@ -1,68 +1,165 @@
+//hero section
 .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 75vh;
-  background: linear-gradient(135deg, #0d6efd 0%, #0a4b9c 100%);
-  color: #ffffff;
-  padding: 40px 20px;
+  background-color: #f4f6f9;
+  padding: 50px 20px;
   text-align: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
 
-  .hero-content {
-    max-width: 700px;
+  .badge {
+    background-color: #2772e3eb;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
 
-    .badge {
-      background-color: rgba(255, 255, 255, 0.2);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+  h1 {
+    margin-top: 15px;
+    span {
+      color: #0d6efd;
+    }
+  }
+
+  .description {
+    color: #6c757d;
+    max-width: 600px;
+    margin: 15px auto;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    h1 {
-      font-size: 2.8rem;
-      margin: 20px 0;
-      font-weight: 700;
+    .btn-primary {
+      background-color: #0d6efd;
+      color: white;
+    }
 
-      span {
-        color: #ffc107;
+    .btn-outline {
+      border: 1px solid #0d6efd;
+      color: #0d6efd;
+    }
+  }
+}
+
+ //Catalogue Section
+.catalogue-section {
+  padding: 20px;
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .filtres-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+    .btn-filtre {
+      padding: 8px 16px;
+      border: 1px solid #0d6efd;
+      background: white;
+      color: #0d6efd;
+      border-radius: 20px;
+      cursor: pointer;
+
+      &.active {
+        background-color: #0d6efd;
+        color: white;
       }
     }
+  }
 
-    .description {
-      font-size: 1.15rem;
-      line-height: 1.6;
-      opacity: 0.9;
-      margin-bottom: 30px;
-    }
+  .produits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 
-    .hero-buttons {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
+    .produit-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
 
-      .btn {
-        padding: 12px 24px;
-        border-radius: 8px;
-        font-weight: 600;
-        text-decoration: none;
-        transition: all 0.3s ease;
+      .card-header {
+        position: relative;
+        text-align: center;
+        padding: 15px;
+        background: #f8f9fa;
 
-        &-primary {
-          background-color: #ffc107;
-          color: #000;
-          &:hover {
-            background-color: #e0a800;
+        .stock-badge {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 0.75rem;
+          padding: 3px 8px;
+          border-radius: 4px;
+          background: #dc3545;
+          color: white;
+
+          &.en-stock {
+            background: #198754;
           }
         }
 
-        &-outline {
-          border: 2px solid #ffffff;
-          color: #ffffff;
-          &:hover {
-            background-color: #ffffff;
+        .produit-img {
+          height: 150px;
+          object-fit: contain;
+          max-width: 100%;
+        }
+      }
+
+      .card-body {
+        padding: 15px;
+
+        .marque-tag {
+          font-size: 0.8rem;
+          color: #0d6efd;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          margin: 5px 0;
+        }
+
+        p {
+          font-size: 0.85rem;
+          color: #6c757d;
+        }
+
+        .card-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 15px;
+          padding-top: 10px;
+          border-top: 1px solid #eee;
+
+          .prix {
+            font-weight: bold;
+            color: #212529;
+          }
+
+          .btn-details {
             color: #0d6efd;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
           }
         }
       }

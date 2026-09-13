@@ -125,7 +125,7 @@ export class ProduitsService {
     prix: 400000,
     image: '/image/produits/play 5 slim.jfif',
     descriptionCourte: 'Design premium, écran bord à bord.',
-    description: 'Le XPS 13 est réputé pour son design haut de gamme et son écran quasiment sans bordures. Excellent choix pour un usage professionnel élégant.',
+    description: ' La PlayStation 5 slim  offre des performances stables adaptées au jeu en 4K classique , Et un gameplay Révolutionnaire.',
     enStock: false
   },
   {
@@ -135,8 +135,8 @@ export class ProduitsService {
     categorie: 'Console de jeux',
     prix: 625000,
     image: '/image/produits/play 5 pro.jfif',
-    descriptionCourte: 'Design premium, écran bord à bord.',
-    description: 'Le XPS 13 est réputé pour son design haut de gamme et son écran quasiment sans bordures. Excellent choix pour un usage professionnel élégant.',
+    descriptionCourte: 'console Next-Gen ultra puissante.',
+    description: ' La PlayStation 5 pro offre des graphismes 4K offre une fluidite exceptionnelle embarque un processeur graphique beaucoup plus puissant',
     enStock: false
   },
 
@@ -147,8 +147,8 @@ export class ProduitsService {
     categorie: 'Console de jeux',
     prix: 330000,
     image: '/image/produits/xbox series s.jfif',
-    descriptionCourte: 'Design premium, écran bord à bord.',
-    description: 'Le XPS 13 est réputé pour son design haut de gamme et son écran quasiment sans bordures. Excellent choix pour un usage professionnel élégant.',
+    descriptionCourte: 'console 100% numerique et compacte.',
+    description: 'La Xbox Series X offre des performances de nouvelle generation avec une fluidite exceptionnelle ideale pour la Game pass.',
     enStock: false
   },
 ];
@@ -159,5 +159,8 @@ export class ProduitsService {
 
   getProduitById(id: number): Produit | undefined {
     return this.produits.find(produit => produit.id === id);
+  }
+  getMarques(): string[]{
+    return[...new Set(this.produits.map(p => p.marque))];
   }
 }

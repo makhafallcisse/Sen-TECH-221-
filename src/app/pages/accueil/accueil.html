@@ -1,9 +1,8 @@
 <div class="hero-container">
   <div class="hero-content">
-    <span class="badge">Nouveau Arrivage au Sénégal</span>
-    <h1>Bienvenue chez <span>Sen-TECH 221</span></h1>
-    <p class="description">
-      Découvrez le meilleur du matériel informatique et high-tech. Des ordinateurs de dernière génération, des smartphones et des accessoires au meilleur prix vous ne serais pas deçu.
+   <h1>Bienvenue chez <span>Sen-TECH 221</span></h1>
+   <p class="description">
+ Découvrez le meilleur du matériel informatique et high-tech. Des ordinateurs de dernière génération, des smartphones et des accessoires au meilleur prix vous ne serais pas deçu.
     </p>
     <div class="hero-buttons">
       <a routerLink="/produits" class="btn btn-primary">Explorer le Catalogue</a>
@@ -11,3 +10,35 @@
     </div>
   </div>
 </div>
+//Section Filtres et produits
+ <div class="filtres-container">
+    <button 
+ *ngFor="let marque of marques" 
+  class="btn-filtre" 
+  [class.active]="marqueSelectionnee === marque"
+   (click)="filtrerParMarque(marque)">
+      {{ marque }}
+    </button>
+  </div>
+
+  //Liste des produits 
+  <div class="produits-grid">
+  <div class="produit-card" *ngFor="let produit of produitsFiltres">
+  <div class="card-header">
+<span class="stock-badge" [class.en-stock]="produit.enStock">
+  {{ produit.enStock ? 'En stock' : 'Rupture' }}</span>
+  <img [src]="produit.image" [alt]="produit.nom" class="produit-img">
+ </div>
+
+<div class="card-body">
+<span class="marque-tag">{{ produit.marque }}</span>
+ <h3>{{ produit.nom }}</h3>
+  <p>{{ produit.descriptionCourte }}</p>
+        <div class="card-footer">
+    <span class="prix">{{ produit.prix | number:'1.0-0' }} FCFA</span>
+  <a [routerLink]="['/produits', produit.id]" class="btn-details">Détails</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
