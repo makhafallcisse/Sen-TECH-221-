@@ -115,7 +115,7 @@ export class ProduitsService {
     image: '/image/produits/dell xps 13.jfif',
     descriptionCourte: 'Design premium, écran bord à bord.',
     description: 'Le XPS 13 est réputé pour son design haut de gamme et son écran quasiment sans bordures. Excellent choix pour un usage professionnel élégant.',
-    enStock: false
+    enStock: true
   },
   {
     id: 11,
@@ -126,7 +126,7 @@ export class ProduitsService {
     image: '/image/produits/play 5 slim.jfif',
     descriptionCourte: 'Design premium, écran bord à bord.',
     description: ' La PlayStation 5 slim  offre des performances stables adaptées au jeu en 4K classique et un gameplay Révolutionnaire.',
-    enStock: false
+    enStock: true
   },
   {
     id: 12,
@@ -137,7 +137,7 @@ export class ProduitsService {
     image: '/image/produits/play 5 pro.jfif',
     descriptionCourte: 'console Next-Gen ultra puissante.',
     description: ' La PlayStation 5 pro offre des graphismes 4K offre une fluidite exceptionnelle embarque un processeur graphique beaucoup plus puissant',
-    enStock: false
+    enStock: true
   },
 
   {
@@ -149,7 +149,7 @@ export class ProduitsService {
     image: '/image/produits/xbox series s.jfif',
     descriptionCourte: 'Console de salon compacte ',
     description: 'la XBOX Series S est équipé du AMD Zen 2 cadencé à 3,6 GHz ,de le carte graphiphe AMD Radeon RDNA 2 et de 512 Go de stockage SSD .',
-    enStock: false
+    enStock: true
   },
 ];
 
