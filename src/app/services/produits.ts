@@ -81,7 +81,7 @@ export class ProduitsService {
     prix: 160000,
     image: '/image/produits/lenovo thinkpad e 14.jfif',
     descriptionCourte: 'Fiabilité légendaire, clavier confortable.',
-    description: 'La gamme ThinkPad est réputée pour sa robustesse et son clavier reconnu comme l\'un des meilleurs du marché. Un excellent compagnon de travail.',
+    description: 'La gamme ThinkPad est réputée pour sa robustesse et son clavier reconnu comme un des meilleurs du marché. Un excellent compagnon de travail.',
     enStock: true
   },
   {
@@ -125,7 +125,7 @@ export class ProduitsService {
     prix: 400000,
     image: '/image/produits/play 5 slim.jfif',
     descriptionCourte: 'Design premium, écran bord à bord.',
-    description: ' La PlayStation 5 slim  offre des performances stables adaptées au jeu en 4K classique , Et un gameplay Révolutionnaire.',
+    description: ' La PlayStation 5 slim  offre des performances stables adaptées au jeu en 4K classique et un gameplay Révolutionnaire.',
     enStock: false
   },
   {
@@ -147,15 +147,15 @@ export class ProduitsService {
     categorie: 'Console de jeux',
     prix: 330000,
     image: '/image/produits/xbox series s.jfif',
-    descriptionCourte: 'console 100% numerique et compacte.',
-    description: 'La Xbox Series X offre des performances de nouvelle generation avec une fluidite exceptionnelle ideale pour la Game pass.',
+    descriptionCourte: 'Console de salon compacte ',
+    description: 'la XBOX Series S est équipé du AMD Zen 2 cadencé à 3,6 GHz ,de le carte graphiphe AMD Radeon RDNA 2 et de 512 Go de stockage SSD .',
     enStock: false
   },
 ];
 
-  getProduits(): Produit[] {
+getProduits(): Produit[] {
     return this.produits;
-  }
+}
 
   getProduitById(id: number): Produit | undefined {
     return this.produits.find(produit => produit.id === id);
