@@ -1,1 +1,20 @@
-<p>produit-detail works!</p>
+@if (produit) {
+  <div class="product-card">
+    <p><strong>Catégorie :</strong> {{ produit.categorie }}</p>
+    <h2>{{ produit.nom }}</h2>
+    <p class="price">{{ produit.prix }} FCFA</p>
+    <p class="description">{{ produit.description }}</p>
+
+    <div class="stock-status">
+      @if (produit.enStock) {
+        <span class="in-stock"> En stock</span>
+      } @else {
+        <span class="out-of-stock"> Rupture de stock</span>
+      }
+    </div>
+  </div>
+} @else {
+  <div class="error-message">
+    <p> Produit non trouvé.</p>
+  </div>
+}

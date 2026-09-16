@@ -51,15 +51,16 @@ export class ProduitsService {
     description: 'Ordinateur portable polyvalent avec processeur AMD Rysen 5, 16 Go de RAM et 512 Go SSD. Parfait pour la bureautique et aussi la programmation.',
     enStock: true
   },
-  {
+  
+   {
     id: 5,
     nom: 'HP ZBook',
     marque: 'HP',
     categorie: 'Ordinateur portable',
     prix: 230000,
-    image: '/image/produits/hp zbook.jfif',
+    image: 'image/produits/hp zbook.jfif',
     descriptionCourte: 'Robuste et sécurisé, pensé pour les professionnels.',
-    description: 'Modèle professionnel avec châssis renforcé, lecteur d\'empreintes digitales et processeur Intel Core i7. Idéal pour un usage en entreprise.',
+    description: "Modèle professionnel avec châssis renforcé, lecteur d'empreintes digitales et...",
     enStock: false
   },
   {
@@ -68,9 +69,9 @@ export class ProduitsService {
     marque: 'HP',
     categorie: 'Ordinateur portable',
     prix: 190000,
-    image: '/image/produits/hp probook 840 g8.jfif',
+    image: 'image/produits/hp probook 840 g8.jfif',
     descriptionCourte: 'Robuste et sécurisé, pensé pour les professionnels.',
-    description: 'Modèle professionnel avec châssis renforcé, lecteur d\'empreintes digitales et processeur Intel Core I 5de 11e génération. Idéal pour un usage en entreprise et de la programmation.',
+    description: "Modèle professionnel avec châssis renforcé, lecteur d'empreintes digitales et...",
     enStock: false
   },
   {
