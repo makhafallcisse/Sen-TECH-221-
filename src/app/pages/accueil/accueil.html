@@ -2,7 +2,7 @@
     <div class="hero-content">
         <h1>Bienvenue chez <span>Sen TECH 221</span></h1>
         <p class="description">
-            Découvrez le meilleur du matériel informatique et high-tech. Des ordinateurs de dernière génération, des smartphones et des accessoires au meilleur prix vous ne serais pas déçu.
+            Découvrez le meilleur du matériel informatique et high-tech. Des ordinateurs de dernière génération, des smartphones et des accessoires au meilleur prix vous ne serez pas déçu.
         </p>
         
     </div>
@@ -34,8 +34,8 @@
         </div>
 
         <div class="card-footer">
-            <span class="prix">{{ produit.prix | number }} FCFA</span>
-            <a [routerLink]="['/produit-detail', produit.id]" class="btn btn-details">Détails</a>
-        </div>
-    </div>
+    <span class="prix">{{ produit.prix | number }} FCFA</span>
+    <a [routerLink]="['/produit-detail', produit.id]" class="btn-voir-plus">
+        Voir le produit
+    </a>
 </div>

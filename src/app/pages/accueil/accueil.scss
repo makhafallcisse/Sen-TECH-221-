@@ -74,22 +74,31 @@
   padding: 20px 0 50px 0;
 }
 
-.produit-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+ .produit-card {
+  border: 1px solid #2a2d34;
+  border-radius: 12px;
+  background: #1e1e24; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: #0d6efd; 
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.2);
+  }
+
+
+
 
 .card-header {
   position: relative;
   text-align: center;
   padding: 15px;
-  background: #f8f9fa;
+  background: #fff;
 
   .stock-badge {
     position: absolute;
@@ -117,20 +126,21 @@
   padding: 15px;
 
   .marque-tag {
-    font-size: 0.8rem;
-    color: #0d6efd;
+    font-size: 0.85rem;
+    color: #0d6efd; 
     font-weight: bold;
     text-transform: uppercase;
   }
 
   h3 {
     font-size: 1.1rem;
+    color: #ffffff; 
     margin: 5px 0;
   }
 
   p {
     font-size: 0.85rem;
-    color: #6c757d;
+    color: #a0a5b5; 
   }
 }
 
@@ -144,13 +154,24 @@
 
   .prix {
     font-weight: bold;
-    color: #212529;
+    color:#ffffff;
   }
 
   .btn-details {
-    color: #0d6efd;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
+  background-color: #0d6efd;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.4);
   }
 }
+  }
+ }
