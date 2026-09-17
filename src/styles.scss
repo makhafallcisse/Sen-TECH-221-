@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* PALETTE DE COULEURS DU SITE — Sen-TECH221
+ Ces variables sont utilisables dans TOUS les
+ fichiers .scss du projet, sans import nécessaire */
+
+:root {
+  --bleu-marine: #0b0141;     // couleur principale foncée (navbar, footer, titres)
+  --bleu-clair: #068ff9;      // couleur d'accent (liens actifs, boutons, survol)
+  --bleu-tres-clair: #eaf2fb; // fond léger, sections claires
+  --blanc: #ffffff;           // texte sur fond foncé, fonds de cartes
+  --gris-texte: #0a0000;      // texte secondaire (descriptions)
+  --gris-clair: #f4f6f9;      // fond général de page
+
+  // Couleurs de statut, à garder cohérentes partout (stock produit)
+  --vert-stock: #1e9c74;
+  --vert-stock-fond: #e6f9f2;
+  --rouge-rupture: #d64545;
+  --rouge-rupture-fond: #fdecea;
+}
+
+body {
+  background-color: var(--gris-clair);
+  color: var(--gris-texte);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  margin: 0;
+}
