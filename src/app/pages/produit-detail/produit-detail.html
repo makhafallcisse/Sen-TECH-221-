@@ -1,20 +1,30 @@
 @if (produit) {
-  <div class="product-card">
-    <p><strong>Catégorie :</strong> {{ produit.categorie }}</p>
-    <h2>{{ produit.nom }}</h2>
-    <p class="price">{{ produit.prix }} FCFA</p>
-    <p class="description">{{ produit.description }}</p>
+  <div class="detail-conteneur">
+    <a routerLink="/" class="retour">&larr; Retour au catalogue</a>
 
-    <div class="stock-status">
-      @if (produit.enStock) {
-        <span class="in-stock"> En stock</span>
-      } @else {
-        <span class="out-of-stock"> Rupture de stock</span>
-      }
+    <div class="product-card">
+      <img [src]="produit.image" [alt]="produit.nom" class="produit-image" />
+
+      <div class="produit-infos">
+        <p class="categorie"><strong>{{ produit.marque }}</strong> · {{ produit.categorie }}</p>
+        <h2>{{ produit.nom }}</h2>
+        <p class="price">{{ produit.prix }} FCFA</p>
+
+        <div class="stock-status">
+          @if (produit.enStock) {
+            <span class="in-stock">En stock</span>
+          } @else {
+            <span class="out-of-stock">Rupture de stock</span>
+          }
+        </div>
+
+        <p class="description">{{ produit.description }}</p>
+      </div>
     </div>
   </div>
 } @else {
   <div class="error-message">
-    <p> Produit non trouvé.</p>
+    <p>Produit non trouvé.</p>
+    <a routerLink="/" class="retour">&larr; Retour au catalogue</a>
   </div>
 }

@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+
 import { ProduitsService } from '../../services/produits';
 import { Produit } from '../../models/produit.model';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-produit-detail',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterLink],   
   templateUrl: './produit-detail.html',
-  styleUrl: './produit-detail.css'
+  styleUrl: './produit-detail.css'   
 })
 export class ProduitDetail implements OnInit {
   produit: Produit | undefined;
 
   constructor(
-    private route: ActivatedRoute,
+    private route:ActivatedRoute,
     public produitsService: ProduitsService
   ) {}
 
