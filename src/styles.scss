@@ -1,17 +1,13 @@
 
-/* PALETTE DE COULEURS DU SITE — Sen-TECH221
- Ces variables sont utilisables dans TOUS les
- fichiers .scss du projet, sans import nécessaire */
-
+/* PALETTE DE COULEURS DU SITE —*/
 :root {
-  --bleu-marine: #0b0141;     // couleur principale foncée (navbar, footer, titres)
-  --bleu-clair: #068ff9;      // couleur d'accent (liens actifs, boutons, survol)
-  --bleu-tres-clair: #eaf2fb; // fond léger, sections claires
-  --blanc: #ffffff;           // texte sur fond foncé, fonds de cartes
-  --gris-texte: #0a0000;      // texte secondaire (descriptions)
-  --gris-clair: #f4f6f9;      // fond général de page
-
-  // Couleurs de statut, à garder cohérentes partout (stock produit)
+  --bleu-marine: #0b0141;     
+  --bleu-clair: #068ff9;     
+  --bleu-tres-clair: #eaf2fb; 
+  --blanc: #ffffff;           
+  --gris-texte: #0a0000;     
+  --gris-clair: #f4f6f9;      
+  /*couleurs stoques*/
   --vert-stock: #1e9c74;
   --vert-stock-fond: #e6f9f2;
   --rouge-rupture: #d64545;

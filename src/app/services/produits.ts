@@ -152,6 +152,7 @@ export class ProduitsService {
     description: 'la XBOX Series S est équipé du AMD Zen 2 cadencé à 3,6 GHz ,de le carte graphiphe AMD Radeon RDNA 2 et de 512 Go de stockage SSD .',
     enStock: true
   },
+
 ];
 
 

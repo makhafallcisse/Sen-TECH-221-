@@ -91,7 +91,7 @@
   }
 }
 
-// ===== FILTRES =====
+// les filtres
 .filtres-container {
   display: flex;
   gap: 10px;
@@ -115,7 +115,7 @@
   }
 }
 
-// ===== GRILLE DE PRODUITS =====
+// ------les produits--------
 .produits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -221,7 +221,7 @@
   }
 }
 
-// ===== RESPONSIVE =====
+
 @media (max-width: 600px) {
   .hero-container h1 {
     font-size: 2.1rem;
