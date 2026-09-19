@@ -1,14 +1,27 @@
 <div class="hero-container">
     <div class="hero-content">
-        <h1>Bienvenue chez <span>Sen TECH 221</span></h1>
+        <h1>Bienvenue chez <span>Sen TECH 221</span></h1> 
+        <p>Votre boutique spécialisée en matériel informatique et high-tech au Sénégal.</p><br>
         <p class="description">
-            Découvrez le meilleur du matériel informatique et high-tech. Des ordinateurs de dernière génération, des smartphones et des accessoires au meilleur prix vous ne serez pas déçu.
+            
+            Nous sélectionnons rigoureusement des ordinateurs de dernière génération issus
+            des plus grandes marques <br> — Apple, HP, Lenovo, Dell , Sony ,Microsopht — <br>pour vous garantir qualité,
+            fiabilité et performance. Que vous soyez étudiant, professionnel ou passionné
+            de technologie, trouvez l'appareil qui correspond réellement à vos besoins,
+            au meilleur prix du marché.
         </p>
         
     </div>
 </div>
 
-<div class="filtres-container">
+
+
+<div class="section-titre">
+    <h2>Notre catalogue</h2>
+    <p>Parcourez notre sélection de produits tech, tous testés et garantis.</p>
+</div>
+
+<div class="filtres-container" id="catalogue">
     <button
     *ngFor="let marque of marques"
     class="btn-filtre"
@@ -34,8 +47,10 @@
         </div>
 
         <div class="card-footer">
-    <span class="prix">{{ produit.prix | number }} FCFA</span>
-    <a [routerLink]="['/produits', produit.id]" class="btn-voir-plus">
-    Voir le produit
-</a>
+            <span class="prix">{{ produit.prix | number }} FCFA</span>
+            <a [routerLink]="['/produits', produit.id]" class="btn-voir-plus">
+                Voir le produit
+            </a>
+        </div>
+    </div>
 </div>

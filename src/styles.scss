@@ -16,6 +16,9 @@
   --vert-stock-fond: #e6f9f2;
   --rouge-rupture: #d64545;
   --rouge-rupture-fond: #fdecea;
+
+  --police-titres: 'Poppins', sans-serif;
+  --police-texte: 'Inter', sans-serif;
 }
 
 body {
@@ -23,4 +26,13 @@ body {
   color: var(--gris-texte);
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   margin: 0;
+  
+  font-family: var(--police-texte);
+  // ...
+
+
+  h1, h2, h3, h4, h5, h6 {
+  font-family: var(--police-titres);
+  // ...
+ }
 }
