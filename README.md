@@ -4,7 +4,7 @@
 
 ## À propos du projet
 
-*Sen-TECH-221* est une application web e-commerce développée avec Angular. Elle propose une interface moderne en Dark Mode pour parcourir un catalogue de produits high-tech, filtrer par catégorie et vérifier la disponibilité des stocks en temps réel.
+*Sen-TECH-221* est une application web e-commerce développée avec Angular. Elle propose une interface moderne pour parcourir un catalogue de produits high-tech,filtrer par catégorie et vérifier la disponibilité des stocks en temps réel.
 
 ---
 
