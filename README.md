@@ -1,59 +1,40 @@
-# SenTechApp
+ # Sen-TECH-221
+> Plateforme e-commerce moderne dédiée au matériel informatique et aux produits high-tech au Sénégal.
+---
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.6.
+## À propos du projet
 
-## Development server
+*Sen-TECH-221* est une application web e-commerce développée avec Angular. Elle propose une interface moderne en Dark Mode pour parcourir un catalogue de produits high-tech, filtrer par catégorie et vérifier la disponibilité des stocks en temps réel.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## Technologies utilisées
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* *Frontend :* Angular (v16+)
+* *Styles :* SCSS / CSS3
+* *Langage :* TypeScript / HTML5
+* *Gestion de versions :* Git & GitHub
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+##  Fonctionnalités principales
 
-```bash
-ng generate component component-name
-```
+- [x] *Catalogue dynamique :* Affichage grid des cartes produits avec images, prix et détails.
+- [x] *Dark Mode complet :* Interface immersive high-tech avec fond en dégradé lumineux.
+- [x] *Gestion des stocks :* Badges d'état dynamiques (En stock / Rupture).
+- [x] *Filtrage des produits :* Barre de filtres par catégorie et recherche.
+- [x] *Navigation réactive :* Navbar et routed views pour la navigation.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Installation et démarrage local
 
-## Building
+### Prérequis
+- Node.js (version LTS recommandée)
+- Angular CLI installé (npm install -g @angular/cli)
 
-To build the project run:
+### Étapes d'installation
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. *Cloner le dépôt :*
+   ```bash
+ git clone [https://github.com/makhafallcisse/Sen-TECH-221-.git](https://github.com/makhafallcisse/Sen-TECH-221-.git)cd Sen-TECH-221-
